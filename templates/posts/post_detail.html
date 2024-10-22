@@ -1,0 +1,6 @@
+<div>
+    {{ post.content }}
+    {% for photo in post.photos.all %}
+        <img src="{{ photo.image.url }}" alt="{{ photo.image.name }}">
+    {% endfor %}
+</div>
